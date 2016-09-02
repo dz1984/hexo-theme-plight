@@ -1,0 +1,27 @@
+
+<div class="pure-g main">
+    <div class="pure-u-1-5"></div>
+    <div class="pure-u-3-5">
+        <div class="text-center">
+            <%- image_tag('images/bio-photo.jpg', {class:'bio-image', alt: config.author + " bio photo"}) %>
+        </div>
+        <div class="author-name text-center">
+            <h1>Donald Zhan</h1>
+            <h2>你好！我是當勞詹！</h2>
+        </div>
+        <div class="link-resource pure-g">
+                <div class="pure-u-1-4 text-center">
+                    <a title="blogger" href="/blog"><i class="fa fa-edit fa-4x"></i></a> 
+                </div>
+                <div class="pure-u-1-4 text-center">
+                    <a title="twitter" href="http://twitter.com/<%= theme.social.Twitter %>" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
+                </div>
+                <div class="pure-u-1-4 text-center">
+                    <a title="githubalt" href="http://github.com/<%= theme.social.Github %>" target="_blank"><i class="fa fa-github fa-4x"></i></a>
+                </div>
+                <div class="pure-u-1-4 text-center">
+                    <a title="googleplus" href="https://plus.google.com/<%= theme.social.GooglePlus %>/" target="_blank"><i class="fa fa-google-plus fa-4x"></i></a>
+                </div>
+        </div>
+    </div>
+</div>

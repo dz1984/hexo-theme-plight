@@ -1,0 +1,14 @@
+<%
+var title = [];
+
+if (page.title) title.push(page.title);
+
+title.push(config.title);
+%>
+
+<meta charset="utf-8">
+<title><%= title.join(' | ') %></title>
+
+<%- css(['css/pure-min.css', 'css/main.css'])%>
+
+<%- css('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css') %>
