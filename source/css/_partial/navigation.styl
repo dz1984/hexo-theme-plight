@@ -7,7 +7,7 @@
 }
 
 .mainnav.active .toggle {
-  left: 200px;
+  left: $nav_width;
 }
 
 .mainnav.active .menu {
@@ -29,9 +29,9 @@
 .mainnav .menu {
   float: right;
   position: fixed;
-  left: -200px;
+  left: -($nav_width);
   height: 100%;
-  width: 200px;
+  width: $nav_width;
   background: #d7d7d7;
   transition: right 0.5s;
 }

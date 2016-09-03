@@ -1,13 +1,21 @@
 <!-- NAV BAR -->
 <nav class="mainnav"> <a href="#" class="toggle"><i class="fa fa-bars"></i></a>
   <div class="menu">
+    <div class="text-center">
+        <h3><%- config.title %></h3>
+        <img src="http://placehold.it/200x200">
+    </div>
     <ul class="nav">
-
+    <% for (var item in theme.menu){ %>
         <li>
-            <a class="btn" href="{{ site.url }}/feed.xml" title="Atom/RSS feed">
-                <i class="fa fa-rss"></i>Feed
+            <a href="<%- url_for(theme.menu[item].url) %>">
+                <% if(theme.menu_icon.enable) { %>
+                    <i class="fa fa-<%- theme.menu[item].icon %>"></i>
+                <% } %>
+                <%- __("menu." + theme.menu[item].title) %>
             </a>
         </li>
+    <% } %>
     </ul>
   </div>
 </nav>

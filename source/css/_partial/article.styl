@@ -1,15 +1,14 @@
 
 .post
-
-
   & a
     display block
     text-decoration none
-    padding: 20px;
+    padding: 50px;
     border-bottom: 3px solid #eaeaea;
-    background-color: #fafafa;
+    background-color $article_bg_color
+
     &:hover
-        background-color darken(#fafafa, 10%)
+        background-color darken(@background-color, 5%)
   & p
     color #565a58
 

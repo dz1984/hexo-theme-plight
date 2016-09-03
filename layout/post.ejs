@@ -14,11 +14,15 @@
                 <div class="article-content">
                   <%- page.content %>
                   <footer  class="muted credit">
-                    <div>Tag:<% page.tags.forEach(function(tag){ %>
-                        <span class="label label-default">#<%- tag.name %></span>
-                        <% }); %>
-                    </div>
+                    <% if(page.tags) {%>
+                        <div>Tag:<% page.tags.forEach(function(tag){ %>
+                            <span class="label label-default">#<%- tag.name %></span>
+                            <% }); %>
+                        </div>
+                    <% } %>
+                    <%- partial('_partial/pagination') %>
                   </footer>
+                </div>
             </article>
     </div>
     <div class="pure-u-1-5"></div>      

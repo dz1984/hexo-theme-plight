@@ -4,3 +4,17 @@ social:
   Github: dz1984
   Twitter: donaldzhan
   GooglePlus: 102226996973468813662
+
+menu:
+  - title: articles
+    url: /archives
+    icon: fa fa-file-text
+  - title: about
+    url: /about
+    icon: fa fa-info-circle
+  - title: tags
+    url: /tags
+    icon: fa fa-tags
+
+menu_icon:
+  enable: true

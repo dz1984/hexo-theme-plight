@@ -1,3 +1,7 @@
+menu:
+  articles: "文章"
+  about: "關於"
+  tags: "標籤"
 footer:
   powered: "Powered by"
   theme: "Theme by"
