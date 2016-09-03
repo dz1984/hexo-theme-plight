@@ -1,0 +1,26 @@
+<section class="post">
+  <a href="<%- url_for(item.path) %>" rel="bookmark" title="<%- item.title %>">
+    <header>
+        <h1 class="text-center">
+          <%- item.title %>
+        </h1>
+    </header>
+    <p>
+      <% if (index){ %>
+        <% content = strip_html(item.content) %>
+        <%- truncate(content, {length: 100}) %>
+      <% } else { %>
+        <%- item.content %>
+      <% } %>
+    </p>
+    <footer>
+      <% if (index){ %>
+        <% if (item.excerpt){ %>
+          <div class="alignleft">
+            <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
+          </div>
+        <% } %>
+      <% } %>
+    </footer>
+  </a>
+</section>

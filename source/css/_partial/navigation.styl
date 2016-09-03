@@ -1,0 +1,63 @@
+.mainnav {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 20px;
+  background-color: #eaeaea;
+}
+
+.mainnav.active .toggle {
+  left: 200px;
+}
+
+.mainnav.active .menu {
+  left: 0;
+}
+
+.mainnav .toggle {
+  color: #565656;
+  display: block;
+  font-size: 50px;
+  height: 65px;
+  position: fixed;
+  left: 0;
+  transition: right 0.5s;
+  background-color: #d7d7d7;
+  padding: 2px 15px 2px 15px;
+}
+
+.mainnav .menu {
+  float: right;
+  position: fixed;
+  left: -200px;
+  height: 100%;
+  width: 200px;
+  background: #d7d7d7;
+  transition: right 0.5s;
+}
+.nav {
+  margin: 0;
+  padding-top: 70px;
+  list-style: none;
+}
+.nav ul {
+  padding: 0;
+}
+.nav li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.nav a {
+  display: block;
+  padding: 15px;
+  color: #565656;
+  background: #d7d7d7;
+}
+
+.nav a {
+  text-decoration: none;
+}
+.nav a i {
+  padding-right: 10px;
+}
