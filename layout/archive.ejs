@@ -1,15 +1,1 @@
-<div class="pure-g">
-    <div class="pure-u-1-5"></div>
-    <div class="pure-u-3-5">
-        <%- partial('_partial/navigation') %>
-        <div class="articles">
-            <% page.posts.each(function(item){ %>
-                <%- partial('_partial/article', {item:item, index: true}) %>  
-            <% }); %>
-        </div>
-     
-    </div>
-    <div class="pure-u-1-5"></div>
-</div><!-- pure-g -->
-
-<%- partial('_partial/pagination') %>
+<%- partial('_partial/archive', {pagination: config.archive}) %>

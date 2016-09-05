@@ -1,18 +1,35 @@
-html, body
-  height 100%
+*
+  margin 0
+  padding 0
 
 body
-  color: #333
-  background-color #ffffff
-  font-family Noto Sans, Noto Sans T Chinese, Microsoft JhengHei, sans-serif
+  background color-background
+  color color-font
+  font-family font-default
+  font-size 14px
+  text-shadow 0 0 1px transparent
 
-body.active
-  padding-left $nav_width
+h1, h2, h3, h4, h5, h6
+  font-family font-title
+
+h1
+  font-size 1.8em
+
+h2
+  font-size 1.5em
+
+h3
+  font-size 1.3em
 
 a
-  color: #428bca
-  text-decoration: none
+  text-decoration none
+  color color-link
 
-  &:hover
-      color #2a6496
-      text-decoration underline
+.alignleft
+  float left
+
+.alignright
+  float right
+
+.clearfix
+  clearfix()

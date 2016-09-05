@@ -1,0 +1,6 @@
+<div class="search">
+  <form class="pure-form" action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="text" name="q" class="pure-input-rounded" results="0" placeholder="<%= __('search') %>">
+    <input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
+  </form>
+</div>

@@ -1,20 +1,40 @@
-
-social:
-  #LinkLabel: Link
-  Github: dz1984
-  Twitter: donaldzhan
-  GooglePlus: 102226996973468813662
-
 menu:
-  - title: articles
-    url: /archives
-    icon: fa fa-file-text
-  - title: about
-    url: /about
-    icon: fa fa-info-circle
-  - title: tags
-    url: /tags
-    icon: fa fa-tags
+  Home:
+  Archives: archives
 
-menu_icon:
+widgets:
+- search
+- category
+- tag
+
+excerpt_link: Read More
+
+twitter:
+  username:
+  show_replies: false
+  tweet_count: 5
+
+addthis:
   enable: true
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+fancybox: true
+
+google_analytics:
+rss:
+
+comment_provider: 
+# Facebook comment
+facebook:
+  appid: 123456789012345
+  comment_count: 5
+  comment_width: 840
+  comment_colorscheme: light
+
+auto_excerpt:
+  enable: true
+  length: 200

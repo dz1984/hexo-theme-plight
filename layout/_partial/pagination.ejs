@@ -1,21 +1,8 @@
-<div class="paginator">
-    <% if (page.prev){ %>
-        <% if (is_post()) { %>
-            <a href="<%- url_for(page.prev.path) %>"> &lt; <%- page.prev.title %></a>
-        <% } else { %>
-            <a href="<%- url_for(page.prev_link) %>" class="pure-button pure-button-primary">
-                <i class="fa fa-chevron-circle-left"></i>
-            </a>
-        <% } %>        
-    <% } %>
-
-    <% if (page.next){ %>
-        <% if (is_post()) { %>
-            <a href="<%- url_for(page.next.path) %>"><%- page.next.title %> &gt; </a>
-        <% } else { %>
-            <a href="<%- url_for(page.next_link) %>" class="pure-button pure-button-primary">
-                <i class="fa fa-chevron-circle-right"></i>
-            </a>
-        <% } %> 
-    <% } %>
-</div> 
+<nav id="pagination">
+  <% if (page.prev){ %>
+    <a href="<%- url_for(page.prev_link) %>" class="pure-button pure-button-primary prev"><%= __('prev') %></a>
+  <% } %>
+  <% if (page.next){ %>
+    <a href="<%- url_for(page.next_link) %>" class="pure-button pure-button-primary next"><%= __('next') %></a>
+  <% } %>
+</nav>

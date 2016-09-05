@@ -1,19 +1,21 @@
-<div class='text-center'>   
+<div>
     <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
         <%- image_tag('images/cc_license.png') %>
     </a>
     <p>
- &copy; <%= new Date().getFullYear() %> <%= config.author %>
+      <% if (config.author){ %>
+      &copy; <%= new Date().getFullYear() %> <%= config.author %>
+      <% } else { %>
+      &copy; <%= new Date().getFullYear() %> <%= config.title %>
+      <% } %>
     </p>
-  <div class="powered-by text-center">
-    <%- __('footer.powered')%>
-    <a class="theme-link" href="https://hexo.io">Hexo</a>
-  </div>
-
-  <div class="theme-info text-center">
-    <%- __('footer.theme') %>
-    <a class="theme-link" href="https://github.com/dz1984/hexo-theme-plight">
-      PLight
-    </a>
-  </div>
+    <div>
+      <%- __('footer.powered')%>
+        <a class="" href="https://hexo.io">Hexo</a>
+        and
+      <%- __('footer.theme') %>
+        <a class="" href="https://github.com/dz1984/hexo-theme-plight">
+          PLight
+        </a>
+    </div>
 </div>

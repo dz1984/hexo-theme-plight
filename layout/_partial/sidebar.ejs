@@ -1,0 +1,18 @@
+<!-- NAV BAR -->
+<nav class="mainnav"> <a href="#" class="toggle"><i class="fa fa-bars"></i></a>
+  <div class="menu">
+    <div class="site-title text-center">
+        <%- config.title %>
+    </div>
+    <div class="site-info">
+        <img src="" class="autor-img"/>
+        <p><%- config.author %></p>
+        <p><%- config.description %></p>
+    </div>
+    <% theme.widgets.forEach(function(widget){ %>
+        <%- partial('../_widget/' + widget) %>
+    <% }); %>
+
+  </div>
+</nav>
+
