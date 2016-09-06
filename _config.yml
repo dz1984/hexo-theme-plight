@@ -3,9 +3,11 @@ menu:
   Archives: archives
 
 widgets:
+- site_info
 - search
 - category
 - tag
+- recent_posts
 
 excerpt_link: Read More
 

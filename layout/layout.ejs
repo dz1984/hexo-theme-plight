@@ -1,20 +1,15 @@
 <%- partial('_partial/head') %>
 
 <body>
-    <div class='container'>
-        <div class="pure-g">
-            <div class="pure-u-1-4">  
-                <div class="sidebar">  
-                <%- partial('_partial/sidebar', {}, {cache: true}) %>
-                </div>
-            </div>
-            <div class="pure-u-3-4 content">
-                <%- body %>
-            </div><!-- pure-u-3-5 -->
+    <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-5">  
+        </div>
+        <div class="pure-u-1 pure-u-md-3-5 content">
+            <%- body %>
+        </div><!-- pure-u-3-5 -->
 
-        </div><!-- pure-g -->
-    </div>
-
+    </div><!-- pure-g -->
+    <%- partial('_partial/sidebar', {}, {cache: false}) %>
     <div class="pure-g footer">
         <div class="pure-u-1-5"></div>
         <div class="footer-note pure-u-3-5">

@@ -1,6 +1,5 @@
 .sidebar
   color #fff
-  width 95%
   background-color #1f8dd6
   line-height 1.8em
   .widget
@@ -58,3 +57,91 @@
     a
       margin-right 10px
       display inline-block
+
+.mainnav
+  color: #eee
+  position: absolute
+  z-index: 999
+  top: 0
+  left: 20px
+  background-color color-sidebar
+  &.active 
+    & .toggle
+      left: nav-width
+
+    & .menu
+      left: 0
+
+
+  .toggle
+    color: #eee
+    display: block
+    font-size: 50px
+    position: fixed
+    left: 0
+    transition: right 0.5s
+    padding: 0px 15px
+    background-color: @background-color
+    &:after
+      content '\f0c9'
+      font-family font-icon
+
+  .menu
+    float: right
+    position: fixed
+    left: -(nav-width)
+    line-height 1.8em
+    height: 100%
+    width: nav-width
+    transition: right 0.5s
+    overflow auto
+    background-color @background-color
+    .site-title
+      line-height: 65px
+      height: 65px
+      letter-spacing: 7px
+      color: #fff 
+
+    .site-info
+      height: 200px
+
+  .nav
+    margin: 0
+    padding: 0
+    list-style: none
+
+    .widget
+      background #fff
+      box-shadow 1px 2px 3px #ddd
+      word-wrap break-word
+      .title
+        background-color #1f8dd6
+        padding 15px 20px
+        font-size 1em
+        border-bottom 1px solid color-border
+        font-weight normal
+
+      .entry
+        font-size 0.9em
+        padding 15px 20px
+
+      ul, ol, dl
+        list-style none
+        ul, ol, dl
+          list-style disc
+          margin-left 20px
+      .tag
+        small
+          margin-left 15px
+          color color-meta
+          &:before
+            content '('
+          &:after
+            content ')'
+    .site-title 
+      a
+        color #eee
+    .search
+      input
+        color #333
+        width 100%

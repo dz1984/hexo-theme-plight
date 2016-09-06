@@ -42,6 +42,12 @@
 
   <%- css("css/pure-min.css") %>
   <%- css("css/main.css") %>
+  <!--[if lte IE 8]>
+  <%- css("css/grids-responsive-old-ie-min.css") %>
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <%- css("css/grids-responsive-min.css") %>
+  <!--<![endif]-->
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <%- partial('google_analytics') %>
 </head>
