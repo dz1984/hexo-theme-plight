@@ -1,5 +1,6 @@
 <%- js("//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js") %>
 <%- js("js/jquery.imagesloaded.min.js") %>
+<%- js('js/jquery.scrollUp.min.js') %>
 <%- js("js/gallery.js") %>
 
 <% if (config.disqus_shortname){ %>
@@ -19,17 +20,26 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 <% if (theme.fancybox){ %>
 <%- css('fancybox/jquery.fancybox.css') %>
 <%- js('fancybox/jquery.fancybox.pack.js') %>
+
 <script type="text/javascript">
 (function($){
-  $('.fancybox').fancybox();
+   $('.fancybox').fancybox();
 })(jQuery);
 </script>
 <% } %>
 
 <script>
-  $('.toggle').click(function (e) {
-    e.preventDefault();
-    $('body').toggleClass('active');
-    $(this).closest('.mainnav').toggleClass('active');
-  });
+  (function($) {
+   
+    $('.toggle').click(function (e) {
+      e.preventDefault();
+      $('body').toggleClass('active');
+      $(this).closest('.mainnav').toggleClass('active');
+    });
+
+    $.scrollUp({
+          scrollDistance: 100,
+          scrollText: ''
+      });
+  })(jQuery);
 </script>
