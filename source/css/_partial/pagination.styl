@@ -1,0 +1,30 @@
+.pagination
+    display block
+
+    a, span
+        float: left;
+        display: block;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 5px 12px;
+        border-color:#ddd; 
+        color:#4285F4;
+        background:#fff;
+        margin-left: -1px;
+        border:1px solid transparent;
+        line-height: 1.5;
+
+    a:hover
+        background-color #ddd
+
+    .current
+        cursor: default
+        border-color: #4285F4;
+        background:#4285F4;
+        color:#fff;
+
+    .prev:before
+        content '\00ab \00a0'
+
+    .next:after
+        content '\00a0 \00bb'

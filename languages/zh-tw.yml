@@ -11,6 +11,9 @@ archive_b: 彙整：%s
 page: 第 %d 頁
 recent_posts: 最新文章
 
+pagination:
+    prev_text: 上一頁
+    next_text: 下一頁
 footer:
     powered: Power by
     theme: Theme By

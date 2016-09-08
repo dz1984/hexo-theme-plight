@@ -1,8 +1,4 @@
-<nav id="pagination">
-  <% if (page.prev){ %>
-    <a href="<%- url_for(page.prev_link) %>" class="pure-button pure-button-primary prev"><%= __('prev') %></a>
-  <% } %>
-  <% if (page.next){ %>
-    <a href="<%- url_for(page.next_link) %>" class="pure-button pure-button-primary next"><%= __('next') %></a>
-  <% } %>
+<nav class="pagination">
+  <%- paginator({prev_text: __('pagination.prev_text'), next_text: __('pagination.next_text')}) %>
+
 </nav>
