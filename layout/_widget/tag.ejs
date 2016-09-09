@@ -2,7 +2,7 @@
 <div class="widget tag">
   <h3 class="title"><%= __('tags') %></h3>
   <% site.tags.sort('name').each(function(item){ %>
-    <a class="button-small pure-button" href="<%- url_for(item.path) %>"><%= item.name %><small><%= item.posts.length %></small>
+    <a class="button-xsmall pure-button" href="<%- url_for(item.path) %>"><%= item.name %><small><%= item.posts.length %></small>
     </a>
   <% }); %>
 </div>
